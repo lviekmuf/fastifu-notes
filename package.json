@@ -9,7 +9,8 @@
         "start:prod": "tsc -p tsconfig.json && node index.js",
         "dev": "nodemon --exec ts-node -r dotenv/config -r tsconfig-paths/register ./server.ts",
         "start:dev": "nodemon --exec ts-node ./index.ts",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start:mongo": "docker compose -f 'docker-compose.yml' up -d --build"
     },
     "keywords": [],
     "author": "",
